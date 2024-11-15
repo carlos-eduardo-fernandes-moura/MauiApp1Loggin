@@ -38,7 +38,7 @@ public partial class Login : ContentPage
 				i => (dados_digitados.Usuario == i.Usuario && dados_digitados.Senha == i.Senha)))
 			{
 				SecureStorage.Default.SetAsync("usuario_logado", dados_digitados.Usuario);
-				App.Current.MainPage = new Protegida();
+				App.Current.MainPage = new Sobre();
 			}
 			else
 			{
